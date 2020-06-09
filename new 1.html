@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Calculadora </title>
+	<style>
+		section{
+			width:300px;
+			height:290px;
+			background-color:gray;
+			position:relative;
+		}
+		.visor_calculadora{
+			position:absolute;
+			width:250px;
+			height:50px;
+			background-color:white;
+			margin-top:15px;
+			margin-left:18px;
+			border:2px solid black;
+			color:black;
+		}
+		.btn{
+			width:55px;
+			height:40px;
+			background-color:red;
+			border:none;
+			pointer:;
+			margin-bottom:5px
+		}	
+		.sinal{
+			margin-left:15px;
+			font-size:20px
+			
+		}
+		.linhas{
+			position:relative;
+			margin-left:20px
+		}
+		.calculadoraprimeir{
+			padding-top:100px;
+		}
+		
+	</style>
+</head>
+<body>
+ <div >
+	<section>
+		<p class="visor_calculadora"> </p>
+		<div class="linhas calculadoraprimeir">
+			<input type="button" value="1" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="2" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="3" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="+" class="btn" onclick ="myFunction(this.value)" >
+		</div>
+		<div class="linhas calculadora">
+			<input type="button" value="4" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="5" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="6" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="-" class="btn" onclick ="myFunction(this.value)" >
+		</div>
+		<div class="linhas calculadora">
+			<input type="button" value="7" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="8" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="9" class="btn" onclick ="myFunction(this.value)" >
+			<input type="button" value="=" class="btn" onclick ="myresult()" >
+		</div>
+		<div class="linhas">
+			<input type="button" value="C" class="btn" onclick="reset()" >
+		</div>
+		
+	</section>
+ </div>
+ 
+	<script src="javascript.js"></script>
+</body>
+</html>
